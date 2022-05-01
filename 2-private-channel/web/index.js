@@ -2,9 +2,8 @@ $(document).ready(function () {
   console.log("ready!");
 
   function playWithoutToken() {
-    // You'll need the playback URL from CDK output or retrieve it from IVS dashboard.
     var PLAYBACK_URL =
-      "https://9dc154f9ed9c.us-east-1.playback.live-video.net/api/video/v1/us-east-1.194989662172.channel.SkwMfWDzfhfL.m3u8";
+      "YOUR PLAYBACK URL";
     registerIVSTech(videojs);
 
     var fn_metadata = function (event) {
@@ -35,7 +34,7 @@ $(document).ready(function () {
         console.log(data);
         var token = data.token;
         var PLAYBACK_URL =
-          "https://9dc154f9ed9c.us-east-1.playback.live-video.net/api/video/v1/us-east-1.194989662172.channel.SkwMfWDzfhfL.m3u8?token=" +
+          "YOUR PLAYBACK URL" +
           token;
         registerIVSTech(videojs);
 
